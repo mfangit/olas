@@ -1,14 +1,115 @@
-<!doctype html>
-<html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="Generator" content="EditPlus®">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-  <title>Document</title>
- </head>
- <body>
-  <div>olas</div>
- </body>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/stylesheet.css"/>
+    <link rel="stylesheet" href="./css/hamburgers.min.css"/>
+    <title>OLAS</title>
+</head>
+<body>
+    <nav id="nav">
+        <div class="logo">
+            <a href=""><img src="./images/logo.png" alt="OLAS"/></a>
+        </div>
+        <div class="menu">
+            <div>
+                <a href=""><img src="./images/logo.png" alt="" class="logo-img"/></a>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Journal</a></li>
+                </ul>
+            </div>
+        </div>
+        <button class="hamburger hamburger-button hamburger--collapse" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+        </button>
+    </nav>
+    <div id="content">
+        <!--first-->
+        <div class="first-wrapper">
+            <div class="first-intro">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus arcu, dapibus quis dui vitae, volutpat elementum dolor.
+                </p>
+            </div>
+            <div class="first-img">
+                <img src="./images/olas_first.png" alt=""/>
+            </div>
+        </div>
+        <!--second-->
+        <div class="sec-wrapper">
+            <div class="first-content">
+                <div class="first-show">
+                    <h1 class="first-title">
+                        Guys Hill Bike rack
+                    </h1>
+                    <div class="first-img">
+                        <img src="./images/olas_sec.png" alt=""/>
+                    </div>
+                </div>
+                <div class="first-intro">
+                </div>
+            </div>
+            <div class="sec-content">
+                <div class="sec-show">
+                    <h1 class="sec-title">
+                        Zig-zag chair
+                    </h1>
+                    <div class="sec-img">
+                        <img src="./images/olas_thi.png" alt=""/>
+                    </div>
+                </div>
+                <div class="sec-intro">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <form action="">
+            <div>
+                <input type="text" placeholder="Journal" class="input"/>
+            </div>
+            <div>
+                <input type="text" placeholder="When The Morning Dawns" class="input"/>
+            </div>
+            <div>
+                <input type="text" placeholder="The Emerald Buddha" class="input"/>
+            </div>
+            <div>
+                <input type="text" placeholder="On Being Human" class="input"/>
+            </div>
+            <div>
+                <input type="text" placeholder="The Idea Of God Is Not Henceforth Relevant" class="input"/>
+            </div>
+        </form>
+        <div class="bottom">
+            <div class="left"><span>hello@olas.com.au</span></div>
+            <div class="center">
+                <span>Newsletter chris@inklab.com.au</span>
+                <span><a href="">Sign me up</a></span>
+            </div>
+            <div class="right">
+                <span>IG</span>
+                <span>FB</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script>
+        $('.hamburger').on('click',function(){
+            $(this).toggleClass('is-active');
+            $('.menu').fadeToggle(1000);
+        })
+    </script>
+</body>
 </html>
